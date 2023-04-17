@@ -24,18 +24,6 @@ const {ListNode} = require("../extensions");
  * }
  */
 
-// function convertArrayToList(arr) {
-//     return arr.reverse().reduce((acc, cur) => {
-//         if (acc) {
-//             const node = new ListNode(cur);
-//             node.next = acc;
-//             return node;
-//         }
-//
-//         return new ListNode(cur);
-//     }, null);
-// }
-
 function removeKFromList(l, k) {
     let dummy = new ListNode(-1);
     dummy.next = l;
@@ -53,8 +41,6 @@ function removeKFromList(l, k) {
 
     return dummy.next;
 }
-
-// console.log(removeKFromList(convertArrayToList([3, 1, 2, 3, 4, 5]), 1));
 
 module.exports = {
     removeKFromList
